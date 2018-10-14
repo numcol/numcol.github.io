@@ -1,0 +1,488 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+
+*[hidden] {
+    display: none;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif
+}
+
+html.page, body.page {
+	height: auto;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+li {
+    font-size: 16px;
+    font-size: calc(16rem / 10);
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.page {
+    height: auto;
+}
+
+.page #wrapper {
+        height: auto;
+        overflow: auto;
+    }
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 104px;
+    font-size: calc(104rem / 10);
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+    font-size: calc(32rem / 10);
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.question {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-size: calc(20rem / 10);
+}
+
+.answer {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-size: calc(16rem / 10);
+}
+
+.answer li {
+        list-style: square;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 100%;
+    padding: 30px;
+}
+
+#header img {
+        float: left;
+    }
+
+.copy {
+    color: #bbb;
+    font-size: 20px;
+    font-size: calc(20rem / 10);
+}
+
+.copy a {
+        color: #bbb;
+    }
+
+#middle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 48%;
+    height: 100%;
+}
+
+#middle img {
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+#soon {
+    font-size: 24px;
+    font-size: calc(24rem / 10);
+    color: #333;
+    margin-top: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 16px;
+    font-size: calc(16rem / 10);
+    color: #666;
+    width: 40%;
+}
+
+#download-container {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+#download-container .download {
+        width: 100%;
+    }
+
+#download-container .download .box {
+
+            background: #f8f8f8;
+            border-right: 2px solid #ddd;
+            border-bottom: 2px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+#download-container .download .box h3 {
+                text-transform: uppercase;
+    font-size: 32px;
+    font-size: calc(32rem / 10);
+                margin-bottom: 15px;
+            }
+
+#download-container .download .box p {
+                margin-bottom: 15px;
+    font-size: 16px;
+    font-size: calc(16rem / 10)
+            }
+
+#download-container .download .box p:last-child {
+	margin: 0;
+}
+
+#download-container .download .box img {
+                float: none;
+                display: block;
+                margin: auto;
+            }
+
+#ios {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-size: calc(16rem / 10);
+}
+
+#donate {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#donate form {
+        display: inline-block;
+    }
+
+footer nav ul {
+        display: block;
+        list-style: none;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+
+footer nav ul li {
+    font-size: 20px;
+    font-size: calc(20rem / 10);
+            display: inline;
+            text-transform: uppercase;
+            border-left: 1px solid #ddd;
+        }
+
+footer nav ul li a {
+                color: #333;
+                padding: 0 20px;
+                text-decoration: underline;
+            }
+
+footer nav ul li:first-child {
+	border: 0;
+}
+
+footer nav ul li:first-child a {
+                    padding-left: 0;
+}
+
+footer nav ul.small li {
+	text-transform: none;
+	font-size: 12px;
+	font-size: calc(12rem / 10);
+}
+
+footer nav ul.small li a {
+                padding: 0 7px;
+}
+
+footer nav ul.small li:first-child a {
+                    padding-left: 0;
+}
+
+.simple-page {
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+    text-align: left;
+}
+
+.simple-page header img {
+            float: left;
+            max-width: 60px;
+        }
+
+.simple-page header h1 {
+    font-size: 64px;
+    font-size: calc(64rem / 10);
+            margin-bottom: 30px;
+        }
+
+.simple-page header h1 a {
+                text-decoration: none;
+                color: #000;
+            }
+
+.simple-page header h2 {
+            padding: 15px;
+            background: #e8e8e8;
+    font-size: 64px;
+    font-size: calc(64rem / 10);
+            font-family: Arial, sans-serif;
+            margin-bottom: 30px;
+        }
+
+.simple-page article h1 {
+            font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+    font-size: calc(48rem / 10);
+            margin-bottom: 20px;
+        }
+
+.simple-page article h2, .simple-page article p {
+            font-family: 'Open Sans Condensed', sans-serif;
+            margin-bottom: 15px;
+            line-height: 1.5em;
+        }
+
+.simple-page article h2 {
+    font-size: 28px;
+    font-size: calc(28rem / 10);
+            margin-bottom: 20px;
+        }
+
+.simple-page article p, .simple-page article h3 {
+            font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-size: calc(20rem / 10);
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+.simple-page article p a, .simple-page article h3 a {
+                color: #000;
+                text-decoration: none;
+            }
+
+.simple-page article p.date, .simple-page article h3.date {
+	font-style: italic;
+	color: #666;
+}
+
+.simple-page article h3 {
+    font-size: 20px;
+    font-size: calc(20rem / 10);
+            color: #222;
+        }
+
+.simple-page article ul {
+            list-style: disc outside none;
+            list-style: initial;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+.simple-page article ul li {
+                font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-size: calc(20rem / 10);
+                margin-bottom: 10px;
+            }
+
+.simple-page article ul li a {
+                    color: #000;
+                    text-decoration: none;
+                }
+
+.simple-page article.mention h1 {
+                margin: 0;
+    font-size: 48px;
+    font-size: calc(48rem / 10);
+}
+
+.simple-page article.mention h1 a {
+                    color: #000;
+                    text-decoration: none;
+                }
+
+.simple-page article.mention p a {
+                    color: #555;
+                    text-decoration: underline;
+                }
+
+.simple-page article.mention p i {
+                    color: #777;
+                }
+
+@media (max-width: 1130px) {
+    html, body {
+        height: auto;
+    }
+
+    #header, #middle, footer, #wrapper {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: auto;
+        left: auto;
+        overflow: visible;
+    }
+
+    #header img {
+        display: inline-block;
+        float: none;
+    }
+
+    #middle {
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+        #middle img {
+            margin-top: 20px;
+        }
+}
+
+@media (max-width: 480px) {
+        #download-container .download {
+            width: 100%
+        }
+        #download-container .download.right {
+		position: relative;
+	}
+        #download-container .download.left {
+		margin-bottom: 20px;
+	}
+
+    h1 {
+    font-size: 72px;
+    font-size: calc(72rem / 10);
+    }
+
+    h2 {
+    font-size: 24px;
+    font-size: calc(24rem / 10);
+    }
+
+    .copy {
+    font-size: 16px;
+    font-size: calc(16rem / 10);
+    }
+
+    footer {
+        padding: 0 20px;
+    }
+}
